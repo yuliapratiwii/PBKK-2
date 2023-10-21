@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* Mengubah flex-direction ke "row" untuk tampilan horizontal */
+    justify-content: center; /* Menengahkan semua konten horizontal */
+    align-items: flex-start; /* Menjaga elemen tetap rapi di bagian atas */
+    flex-wrap: wrap; /* Memungkinkan pembungkus elemen ke baris berikutnya jika perlu */
+}
+
+h1 {
+    text-align: center;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    margin: 0; /* Menghilangkan margin bawah agar rapi */
+}
+
+.book {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px; /* Menghilangkan margin bawah untuk elemen .book */
+    padding: 10px;
+    width: 200px;
+    flex: 1; /* Menggunakan flex untuk mengisi ruang yang tersedia secara merata */
+    max-width: 300px; /* Maksimum lebar .book agar tidak melebar */
+    text-align: center; /* Pusatkan konten di dalam .book */
+}
+
+.book img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 100%; /* Menambahkan width 100% untuk memastikan semua gambar memiliki ukuran yang sama */
+    
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: center;
+}
