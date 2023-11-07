@@ -31,3 +31,11 @@ Route::get('/author/{author}/edit', [AuthorController::class, 'edit'])->name('au
 Route::put('/author/{author}', [AuthorController::class, 'update'])->name('author.update');
 Route::delete('/author{author}', [AuthorController::class,'destroy'])->name('author.destroy');
 // Route::resource('author', [AuthorController::class]);
+
+Route::get('/halaman-a', function () {
+    return view('contoh.halaman-a');
+});
+
+Route::get('/halaman-b', function () {
+    return view('contoh.halaman-b');
+});
