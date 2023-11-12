@@ -39,3 +39,7 @@ Route::get('/halaman-a', function () {
 Route::get('/halaman-b', function () {
     return view('contoh.halaman-b');
 });
+
+Route::get('/books-adm/index', function(){
+    return view('books-adm.index');
+});

@@ -4,6 +4,7 @@
     <title>Data Buku</title>
     <link rel="stylesheet" href="{{ asset('css/buku.css') }}">
 </head>
+
 <body>
     <h1>Data Buku</h1>
 
