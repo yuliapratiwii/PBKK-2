@@ -50,6 +50,7 @@
                                 </li>
                                 <li>
                                     <a href="login.html">
+                                        
                                         <i class="fas fa-sign-out-alt"></i>Log Out</a>
                                 </li>
                                 <li>
