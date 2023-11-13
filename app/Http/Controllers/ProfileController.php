@@ -9,9 +9,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
 use App\Models\User;
+
 class ProfileController extends Controller
 {
-    
+
     protected function redirectTo()
     {
         return '/books';
