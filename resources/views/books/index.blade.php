@@ -45,16 +45,18 @@
                                 </span>
                             </a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <x-dropdown-link :href="route('logout')"
+                                        onclick="event.preventDefault(); this.closest('form').submit();">
+                                         <i class="fas fa-sign-out-alt"></i> Log Out
+                                    </x-dropdown-link>
+                                </form>
+                                
+                                
                                 <li>
-                                    <a href="login.html">
-                                        <i class="fas fa-sign-in-alt"></i>Login</a>
-                                </li>
-                                <li>
-                                    <a href="login.html">
-                                        <i class="fas fa-sign-out-alt"></i>Log Out</a>
-                                </li>
-                                <li>
-                                    <a href="register.html">
+                                    <a href="{{ route('register') }}">
                                         <i class="fas fa-user-plus"></i>New Account</a>
                                 </li>
                             </ul>
